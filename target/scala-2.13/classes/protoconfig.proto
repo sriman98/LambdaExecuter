@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.protobuff.proto;
+
+service GrpcService {
+  // Sends a greeting
+  rpc GrpcServer (logRequest) returns (logReply) {}
+}
+
+message logRequest {
+  string T = 1;
+  string DT=2;
+}
+
+// The response message containing the greetings
+message logReply {
+  string message = 1;
+}

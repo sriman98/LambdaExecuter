@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0mD:\UIC\2nd Sem\cloud\LambdaExecuter\src\main\scala\Grpc\GrpcClient.scala:50:16: multiline expressions might require enclosing parentheses; a value can be silently discarded when Unit is expected[0m
+[0m[[0m[33mwarn[0m] [0m[0m      response.message[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

@@ -1,0 +1,34 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = D:\UIC\2nd Sem\cloud\LambdaExecuter\target\scala-2.13\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcServiceBlockingClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcServiceBlockingStub$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcServiceBlockingStub.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcService$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ProtoconfigProto.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServer$GrpcServiceImpl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ObtainConfigReference$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcService$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ProtoconfigProto$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logReply$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CreateLogger.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ObtainConfigReference.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CreateLogger$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logRequest$logRequestLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcServiceStub$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcClient.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AkkaClient$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logReply$logReplyLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GrpcServiceGrpc$GrpcServiceStub.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logReply.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: D:\UIC\2nd Sem\cloud\LambdaExecuter\target\scala-2.13\classes.bak[0m

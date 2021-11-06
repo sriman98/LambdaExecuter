@@ -1,0 +1,90 @@
+13:09:26.475 [main] INFO  java.lang.Class - RPC failed: {0}Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:50051
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+}
+13:13:14.859 [main] INFO  java.lang.Class - Server started on 50051
+13:14:05.372 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+13:14:09.763 [main] INFO  java.lang.Class - Server started on 50051
+13:14:28.544 [main] INFO  java.lang.Class - RPC failed: {0}Status{code=UNAVAILABLE, description=io exception
+Channel Pipeline: [SslHandler#0, ProtocolNegotiators$ClientTlsHandler#0, WriteBufferingAndExceptionHandler#0, DefaultChannelPipeline$TailContext#0], cause=io.netty.handler.ssl.NotSslRecordException: not an SSL/TLS record: 00001204000000000000037fffffff000400100000000600002000000004080000000000000f0001
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1254)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1322)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+}
+16:03:06.910 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+17:02:32.311 [main] INFO  java.lang.Class - Server started on 50051
+17:03:01.590 [main] INFO  java.lang.Class - Greeting: suh dude!
+18:04:26.844 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+19:45:06.298 [main] INFO  java.lang.Class - Server started on 50051
+19:45:19.629 [main] INFO  java.lang.Class - RPC failed: {0}Status{code=UNKNOWN, description=null, cause=null}
+19:45:37.616 [default-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:45:39.248 [default-akka.actor.default-dispatcher-7] INFO  java.lang.Class - Akka Client: Connected to AWS end point to process the Lambda
+19:45:39.257 [default-akka.actor.default-dispatcher-7] INFO  java.lang.Class - Status Code: 200 OK
+19:45:39.257 [default-akka.actor.default-dispatcher-7] INFO  java.lang.Class - Header: List(Date: Fri, 05 Nov 2021 00:45:40 GMT, Connection: keep-alive, x-amzn-RequestId: e9f5f6c5-ad3c-457a-893a-ca9cc7e520e0, x-amz-apigw-id: ITi8RHj4CYcF10w=, X-Amzn-Trace-Id: Root=1-61847eb4-6487a1463d7a29285a5311d5;Sampled=0)
+19:45:39.266 [default-akka.actor.default-dispatcher-5] INFO  java.lang.Class - ["<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>"]
+19:47:26.216 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+19:47:45.516 [main] INFO  java.lang.Class - Server started on 50051
+19:49:04.749 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+19:49:11.706 [main] INFO  java.lang.Class - Server started on 50051
+19:49:22.665 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:30:43&dT=00:00:10
+19:49:23.448 [main] INFO  java.lang.Class - RPC failed: {0}Status{code=UNKNOWN, description=null, cause=null}
+19:52:45.088 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+19:52:53.216 [main] INFO  java.lang.Class - Server started on 50051
+19:53:01.376 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:30:43&dT=00:00:10
+19:53:02.099 [grpc-default-executor-0] INFO  java.lang.Class - ["<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>", "<md5 HASH object @ 0x7f379b6b4530>"]
+19:53:02.155 [main] INFO  java.lang.Class - RPC failed: {0}Status{code=UNKNOWN, description=null, cause=null}
+20:05:56.043 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+20:06:02.234 [main] INFO  java.lang.Class - Server started on 50051
+20:06:09.705 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:30:43&dT=00:00:10
+20:06:11.037 [main] INFO  java.lang.Class - ["<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>"]
+20:09:23.895 [grpc-default-executor-1] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:20:43&dT=00:00:10
+20:09:24.289 [main] INFO  java.lang.Class - ["<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>"]
+20:09:38.923 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+20:09:44.690 [main] INFO  java.lang.Class - Server started on 50051
+20:09:57.930 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:20:43&dT=00:00:10
+20:09:58.667 [main] INFO  java.lang.Class - ["<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>", "<md5 HASH object @ 0x7fddb62f6530>"]
+20:10:30.529 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:10:43&dT=00:00:10
+20:10:30.891 [main] INFO  java.lang.Class - RPC failed: {0}Status{code=UNKNOWN, description=null, cause=null}
+20:14:41.883 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+20:17:57.892 [main] INFO  java.lang.Class - Server started on 50051
+20:18:07.682 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:10:43&dT=00:00:10
+20:18:09.033 [main] INFO  java.lang.Class - Status 404: No Messages Found
+20:18:18.013 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:10:43&dT=00:00:10
+20:18:18.173 [main] INFO  java.lang.Class - Status 404: No Messages Found
+20:20:17.610 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down
+20:20:33.856 [main] INFO  java.lang.Class - Server started on 50051
+20:20:42.586 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:10:43&dT=00:00:10
+20:20:43.360 [main] INFO  java.lang.Class - Status 404: No Messages Found
+20:21:07.349 [grpc-default-executor-0] INFO  java.lang.Class - https://8udfqkcn35.execute-api.us-east-2.amazonaws.com/test/logprocessor?T=16:30:43&dT=00:00:10
+20:21:07.533 [main] INFO  java.lang.Class - Status 200:["<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>", "<md5 HASH object @ 0x7f6598114530>"]
+20:21:57.121 [shutdownHook1] INFO  java.lang.Class - Shutting down gRPC server since JVM is shutting down

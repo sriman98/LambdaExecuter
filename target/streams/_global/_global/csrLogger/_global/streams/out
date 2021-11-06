@@ -1,0 +1,5 @@
+[debug] downloaded https://repo1.maven.org/maven2/io/grpc/grpc-core/maven-metadata.xml
+[debug] downloaded https://repo1.maven.org/maven2/com/example/my-grpc-service_2.13/1.0.0/my-grpc-service_2.13-1.0.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/example/my-grpc-service_2.13/1.0.0/my-grpc-service_2.13-1.0.0.pom.sha1
+[debug] downloaded https://jcenter.bintray.com/com/example/my-grpc-service_2.13/1.0.0/my-grpc-service_2.13-1.0.0.pom
+[debug] downloaded https://jcenter.bintray.com/com/example/my-grpc-service_2.13/1.0.0/my-grpc-service_2.13-1.0.0.pom.sha1
